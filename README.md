@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# YipOnline Product App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application built as a case study for YipOnline, allowing users to manage up to 5 products with name, photo, and pricing information.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Add up to five products with name, photo, and price
+- View all products in a responsive grid layout
+- View detailed information for each product
+- Edit existing product information
+- Delete products
+- Notification system for maximum product limit
+- Smooth animations for enhanced user experience
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- Expo SDK 50
+- React Native
+- TypeScript
+- NativeWind (Tailwind CSS for React Native)
+- React Native Reanimated for animations
+- Expo Router for file-based navigation
+- AsyncStorage for local data persistence
+- Expo Image Picker for photo selection
 
-   ```bash
-    npx expo start
-   ```
+## Getting Started
 
-In the output, you'll find options to open the app in a
+### Prerequisites
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js (version 14 or above)
+- npm or yarn
+- Expo CLI
+- iOS Simulator or Android Emulator (optional)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Installation
 
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone the repository
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/yiponline-product-app.git
+cd yiponline-product-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-## Learn more
+3. Start the development server
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Run on a device or emulator
+   - Press `i` to run on iOS Simulator
+   - Press `a` to run on Android Emulator
+   - Scan the QR code with Expo Go app on your physical device
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Usage
 
-## Join the community
+- **Home Screen**: View all added products or an empty state if none exist
+- **Add Product**: Tap the + button to add a new product (if below 5 products)
+- **Product Details**: Tap on a product card to view details
+- **Edit Product**: From the product details screen, tap "Edit" to modify
+- **Delete Product**: From the product details or home screen, use the delete button
 
-Join our community of developers creating universal apps.
+## Case Study Requirements
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project fulfills the YipOnline case study requirements by:
+1. Allowing users to upload up to five products to a simple product app
+2. Enabling users to input the name, photo, and pricing of each product
+3. Implementing a notification system to alert users when the maximum number of products (5) has been reached

@@ -14,3 +14,34 @@ export interface ProductContextType {
   isMaxProductsReached: boolean;
   MAX_PRODUCTS: number;
 }
+
+export interface HeaderProps {
+  title: string;
+  showBackButton?: boolean;
+  showAddButton?: boolean;
+  rightAction?: () => void;
+  rightIcon?: React.ReactNode;
+}
+
+export interface ImagePickerProps {
+  imageUri: string;
+  onImageSelected: (uri: string) => void;
+}
+
+export interface ProductFormProps {
+  existingProduct?: Product;
+  isEditing?: boolean;
+}
+
+export interface ProductCardProps {
+  product: Product;
+  onDelete: (id: string) => void;
+}
+
+export interface EmptyStateProps {
+  title?: string;
+  message?: string;
+  icon?: React.ReactNode;
+  actionLabel?: string;
+  onAction?: () => void;
+}
